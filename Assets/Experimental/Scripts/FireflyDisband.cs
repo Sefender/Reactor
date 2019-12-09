@@ -5,8 +5,10 @@ using UnityEngine;
 public class FireflyDisband : MonoBehaviour
 {
     private GameObject flies;
+    private GameObject player;
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         flies = gameObject;
     }
 
